@@ -1,0 +1,72 @@
+ /*=======================================================================  header  ========================================================================================*/
+ 
+ @media(max-width:710px) {
+     header>.menu {
+         flex-direction: column;
+     }
+     .maior-plataforma>.box {
+         flex-direction: column;
+     }
+     .saude>.box {
+         flex-direction: column;
+     }
+     .atuacao-grupoa>.box {
+         flex-direction: column;
+     }
+     header>.menu>.navigacao ul {
+         font-size: 80%;
+         padding-bottom: 10px;
+     }
+ }
+ 
+ @media(max-width:550px) {
+     header>.menu>.navigacao ul {
+         font-size: 50%;
+     }
+ }
+ 
+ @media(max-width:430px) {
+     header>.menu>.navigacao ul {
+         font-size: 40%;
+     }
+     header>.menu>.navigacao li:last-child {
+         margin-left: 10px;
+     }
+ }
+
+ 
+ /*=========================================================================== Sessão 01 ================================================================================================*/
+
+ /*===================================================================Rodape==========================================*/
+ 
+    
+   
+ @media(min-width:360px) and (max-width:375px){
+    .rodape{
+       margin-bottom:70px; 
+
+    }
+   }
+
+   
+ @media(min-width:375px) and (max-width:375px){
+    .rodape{
+       margin-bottom:100px; 
+
+    }
+   }
+   
+   
+ @media(min-width:411px) and (max-width:411px){
+    .rodape{
+       margin-bottom:150px; 
+
+    }
+   }
+   
+   @media(min-width:768px) and (max-width:800px){
+    .rodape{
+       margin-bottom:450px; 
+
+    }
+   }

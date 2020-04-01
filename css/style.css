@@ -1,0 +1,408 @@
+/* ========================================================================SET UP======================================================== */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+ul{list-style: none;}
+img{max-width: 100%;}
+
+/* ========================================================================Fim do SET UP======================================================== */
+
+
+/*==========================================================================   Header  ==========================================================*/
+
+/*==================================hamburger====================================*/
+.cabecalho{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    position: fixed;
+    /* background-color: #867878; */
+    border-right:5px solid #E30513;
+    
+}
+.logo{width:150px;height: 56px;float: left;background: url(../img/grupoa.png)center center/150px no-repeat;}
+
+.btn-menu{width: 56px;
+          height: 56px; 
+          float: right;
+          text-align: center;
+          color: #fff;
+          cursor: pointer;
+          background: linear-gradient(to right,#ce2e3c,#da6709);
+        }
+
+        .menu{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.9);top: 0;left: 0;
+            display: none;
+        }
+     
+
+        .menu ul li:last-child>a{
+            margin-left: 60px;
+        }
+        
+        .menu ul li:first-child>a:hover{
+            text-decoration: underline;
+        }
+        
+        .menu ul li:last-child>a:hover{
+          border: 2px solid#E30513 ;
+          padding:4px;
+          color: black;
+          font-weight: 800;
+        }
+        .btn-close{
+            font-size: 3em;color: #fff;float: right;cursor: pointer;margin-right: 5%;padding-top:3%;
+        }
+        .menu ul{width: 100%;float: left;text-align: center;}
+        .menu li{padding: 1.5%;}
+        .menu li a{font-size: 2em;color: #fff;}
+        .menu li a:hover{color: #E30513;}
+
+        /*===========================LARGE DEVICES - WIDE SCREENS==============================*/
+            @media screen and (min-width:991px){
+                .btn-menu{display: none;}
+                .btn-close{display: none;}
+                .menu{width: auto;
+                    height: 56px;
+                    line-height: 56px;
+                    float: right;
+                    background-color:white;
+                    display: block !important;
+                    position: static;
+                }
+                .menu li{padding: 0;float: left;}
+                .menu li a{
+                    color:black;
+                    font-size: 1em;
+                    padding: 15px;
+                }
+                .menu li a:hover{border: none;color: #E30513;}
+            }
+        /*===========================LARGE DEVICES - WIDE SCREENS==============================*/
+/*==================================humburger====================================*/
+/* header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    border-right: 5px solid red;
+    height: 80px;
+} */
+
+
+/*========================================================================= Menu ===============================================================*/
+/* 
+header>.menu>.logo img {
+    width: 90px;
+}
+
+header>.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 20px;
+    color: black;
+}
+
+header>.menu>.navigacao ul {
+    display: flex;
+    color: black;
+}
+
+header>.menu>.navigacao li {
+    margin: 0 10px;
+}
+
+header>.menu>.navigacao li a {
+    color: black;
+}
+
+header>.menu>.navigacao a:hover {
+    color: #E30513;
+}
+
+header>.menu>.navigacao :nth-child(7) a:hover {
+    color: black;
+    border: 1px solid#E30513;
+    padding: 10px;
+}
+
+header>.menu>.navigacao li:first-child {
+    margin-left: 0;
+}
+
+header>.menu>.navigacao li:first-child a:hover {
+    border-bottom: 1px solid #E30513;
+}
+
+header>.menu>.navigacao li:last-child {
+    margin-left: 80px;
+    margin-right: 0;
+} */
+
+
+/*============================================================================= Fim do Header==============================================================================*/
+
+
+/*============================================================================= Sessão 01 ==============================================================================*/
+
+.maior-plataforma {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.maior-plataforma>.box {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.maior-plataforma>.box>.left {
+    width:200px;
+    height:200px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+}
+
+.maior-plataforma>.box>.middle h2 {
+    margin-top: 35px;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.maior-plataforma>.box>.middle h2 mark {
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+
+.maior-plataforma>.box>.middle p {
+    margin-top: 20px;
+    color: #867878;
+}
+
+
+
+
+/*=============================================================================== Sessão 02 ============================================================================*/
+
+.atuacao-grupoa {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding-left:13.5%;
+    padding-right: 20%;
+}
+
+.atuacao-grupoa>.box {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.atuacao-grupoa>.box>.right {
+    width: 250px;
+    height: 160px;
+    background-color: #d0d0d0;
+}
+
+.atuacao-grupoa>.box>.left p mark {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.atuacao-grupoa>.box>.left h2 mark {
+    background-color: transparent;
+    border-top: 3px solid #E30513;
+}
+
+.atuacao-grupoa>.box>.left h2 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.atuacao-grupoa>.box>.left p {
+    margin-top: 30px;
+    color: #867878;
+    margin-left: 80px;
+    /* border-bottom: 3px solid #E30513; */
+    padding-bottom: 15px;
+}
+
+/*=============================================================================== Sessão 03 ===========================================*/
+.conteudo>.box-txt{
+    display: flex;
+    justify-content:center;
+}
+
+.box-txt-right{
+    display:inline-flex;
+}
+
+.box-txt-right>.span1{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#E30513;
+}
+
+.box-txt-right>.span2{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color:#d0d0d0;
+}
+.box-txt-center mark{
+    color: #E30513;
+    background-color:transparent;
+    font-weight: 700;
+    border-top: 2px solid #E30513 ;
+}
+
+.box-txt-center p{
+    color: #867878; 
+}
+.box-logo{
+    display: flex;
+    justify-content:space-between;
+    padding-left:25%;
+    padding-right: 35%;
+    margin-top:2%;
+    
+}
+
+.img-sagah1 img{
+    width: 150px;
+    margin-right:5%;
+  }
+  
+.img-sagah2 img{
+    width: 150px;
+  }
+  .img-last{
+      width:40px;
+      margin-top:-10px;
+  }
+  .box-logo h6{
+      color:#E30513;
+      margin-top:4%;
+      border-bottom:1px solid#E30513;
+  }
+  
+/*=============================================================================== Sessão 03 ===========================================*/
+
+
+/*=============================================================================== Sessão 04 ============================================================================*/
+
+.saude {
+    position: relative;
+    width: 100%;
+    padding-left:25%;
+    padding-right:25%;
+}
+
+.saude>.box {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.saude>.box>.left {
+    width:200px;
+    height: 160px;
+    background-color: #d0d0d0;
+}
+
+.saude>.box h2 {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.saude>.box p {
+    margin-top: 20px;
+    color: #867878;
+    margin-bottom: 10px;
+}
+ 
+
+/*=============================================================================   Rodape  =========================================================================*/
+
+.rodape {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top:3%;
+    background-color: black;
+}
+.rodape>.box{
+    display: inline-flex;
+}
+.rodape>.box>.left{
+ margin-top:5%;
+ margin-bottom:5%;
+}
+.rodape>.box>.txt{
+    width: 100%;
+    font-size: 12px;
+    color:#867878;
+    margin-top:7%;
+    margin-left: 10%;
+    margin-bottom:5%;
+   }
+   .rodape>.right>.txt{
+    font-size:15px;
+    color:#867878;
+    margin-top:10%;
+   }
+
+.rodape>.right{
+    display: inline-flex;
+    
+}
+.rodape>.right>.redes{
+   margin-left: 15px;
+   margin-top:9%;
+}
+
+.rodape>.right>.redes i{
+    color:white;
+ }
+ 
